@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="style.css">
+  <title>Flag Form</title>
+</head>
+<body>  
+  <center><h1>Commit The Flag Submission Form</h1>
+  <div id='flagform'>
+    <form>
+    <table align="center" style="width: 100%">
+    <tr>
+        <td><label for="fname">Team's Name / Name (for individual participants)</label></td>
+        <td><input type="text" id="fname" name="firstname" placeholder="Your name.."></td>
+    </tr>    
+    <tr>
+        <td><label for="round">Round Number</label></td>
+        <td><input type="number" id="round" name="roundnum" placeholder="Round Number.."></td>
+    </tr>
+    <tr>       
+        <td><label for="flag">Flag</label>  </td>
+        <td><input type="text" id="flag" name="flagname" placeholder="commit{...}"> </td>  
+    </tr> 
+    </table>  
+      <button type="submit" id="submit" >Submit</button>
+    </form>
+    <p id =''></p>
+  </div></center>   
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
